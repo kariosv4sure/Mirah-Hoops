@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://mirah-hooks.onrender.com/sitemap.xml
