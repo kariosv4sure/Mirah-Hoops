@@ -1,254 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Mirah Hoops — Handmade Crochet & Knitting Brand</title>
-<meta name="description" content="Handmade knitting & crocheting wears including earrings, caps, dresses, headbands, scrunchies, and baby sets.">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mirah Hoops — Handmade Crochet & Knitting Brand</title>
+  <meta name="description" content="Mirah Hoops - Handmade knitting & crocheting wears, earrings, caps, dresses, headbands, scrunchies, and baby sets. Quality crochet & knitting products.">
 
-<!-- Open Graph -->
-<meta property="og:title" content="Mirah Hoops — Handmade Crochet & Knitting Brand">
-<meta property="og:description" content="Handmade knitting & crocheting wears including earrings, caps, dresses, headbands, scrunchies, and baby sets.">
-<meta property="og:image" content="preview.jpg">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://mirah-hoops.onrender.com">
+  <!-- Open Graph / Social Preview -->
+  <meta property="og:title" content="Mirah Hoops — Handmade Crochet & Knitting Brand">
+  <meta property="og:description" content="Handmade knitting & crocheting wears including earrings, caps, dresses, headbands, scrunchies, and baby sets.">
+  <meta property="og:image" content="preview.jpg">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mirah-hoops.onrender.com">
 
-<!-- Twitter Card -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Mirah Hoops">
-<meta name="twitter:description" content="Handmade knitting & crocheting wears, earrings, caps, dresses, headbands, scrunchies, and baby sets.">
-<meta name="twitter:image" content="preview.jpg">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Mirah Hoops">
+  <meta name="twitter:description" content="Handmade knitting & crocheting wears, earrings, caps, dresses, headbands, scrunchies, and baby sets.">
+  <meta name="twitter:image" content="preview.jpg">
 
-<!-- Fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Fira+Code:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Fira+Code:wght@400;600&display=swap" rel="stylesheet">
 
-<style>
-:root {
-  --bg:#0b0f14;
-  --text:#eaf2ff;
-  --muted:#9fb0c3;
-  --neon:#37ff8b;
-  --neon2:#4cc9f0;
-  --accent:#00ffa6;
-  --ring:0 0 24px rgba(55,255,139,.35),0 0 48px rgba(76,201,240,.15);
-  --radius:22px;
-}
-*{box-sizing:border-box;margin:0;padding:0;}
-html, body {
-  height:100%;
-  background:radial-gradient(1200px 1200px at 10% -10%, #112, transparent),
-            radial-gradient(900px 900px at 110% 10%, #051a1f, transparent),
-            var(--bg);
-  color:var(--text);
-  font-family:'Space Grotesk',system-ui,sans-serif;
-}
-a{color:inherit;text-decoration:none;}
-.wrap{
-  max-width:1150px;
-  margin:0 auto;
-  padding:20px 16px;
-}
-
-/* NAVIGATION */
-.nav{
-  position:sticky;
-  top:0;
-  z-index:10;
-  background:linear-gradient(180deg, rgba(11,15,20,.9), rgba(11,15,20,.6) 60%, transparent);
-  backdrop-filter:blur(6px);
-  border-bottom:1px solid rgba(255,255,255,.06);
-}
-.row{
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:16px;
-  flex-wrap:wrap;
-}
-.brand{
-  display:flex;
-  align-items:center;
-  gap:10px;
-  font-weight:700;
-  font-size:18px;
-}
-.badge{
-  width:12px;
-  height:12px;
-  border-radius:50%;
-  background:conic-gradient(from 120deg, var(--neon), var(--neon2));
-  box-shadow:0 0 18px rgba(55,255,139,.8);
-}
-.links{
-  display:flex;
-  flex-wrap:wrap;
-  gap:12px;
-}
-.links a{
-  opacity:.8;
-  padding:6px 10px;
-  border-radius:10px;
-  transition:0.2s;
-}
-.links a:hover{opacity:1;background:rgba(255,255,255,.04);}
-
-/* HERO */
-.hero{
-  padding:60px 0 40px;
-}
-.grid{
-  display:grid;
-  grid-template-columns:1.3fr 1fr;
-  gap:30px;
-}
-.card{
-  background:linear-gradient(180deg, rgba(255,255,255,.02), rgba(255,255,255,.01));
-  border:1px solid rgba(255,255,255,.08);
-  border-radius:var(--radius);
-  padding:30px;
-  box-shadow:var(--ring);
-  position:relative;
-}
-.pill{
-  display:inline-flex;
-  gap:8px;
-  align-items:center;
-  padding:6px 12px;
-  border-radius:999px;
-  background:rgba(55,255,139,.09);
-  border:1px solid rgba(55,255,139,.35);
-  font-family:'Fira Code', monospace;
-  font-size:12px;
-}
-h1{font-size:clamp(28px,6vw,48px);margin:18px 0;}
-.type{color:var(--neon);}
-p.lead{color:var(--muted);font-size:16px;line-height:1.5;}
-.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:16px;}
-.btn{
-  padding:10px 16px;
-  border-radius:12px;
-  border:1px solid rgba(255,255,255,.12);
-  background:#0d131c;
-  cursor:pointer;
-  font-weight:600;
-  font-size:14px;
-}
-.btn.primary{border-color:rgba(55,255,139,.6);}
-
-/* SECTIONS */
-.section-header{
-  font-size:24px;
-  margin:50px 0 20px;
-  color:var(--neon2);
-  text-align:center;
-}
-.tray{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
-  gap:18px;
-}
-.tile{
-  background:linear-gradient(180deg, rgba(255,255,255,.02), rgba(255,255,255,.01));
-  border:1px solid rgba(255,255,255,.08);
-  border-radius:18px;
-  padding:18px;
-}
-footer{text-align:center;margin:50px 0;color:#9fb0c3;}
-
-/* RESPONSIVE */
-@media(max-width:900px){
-  .grid{grid-template-columns:1fr; gap:20px;}
-  .hero{padding:40px 10px 20px;}
-  .card{padding:20px;}
-  .pill{font-size:11px;padding:4px 10px;}
-  .cta .btn{padding:8px 12px;font-size:13px;}
-  .section-header{font-size:20px;margin:40px 0 16px;}
-  p.lead{font-size:15px;}
-  .tray{gap:14px;}
-  .tile{padding:14px;}
-  .row{flex-direction:column;align-items:flex-start;gap:10px;}
-}
-</style>
+  <style>
+    :root{
+      --bg:#0b0f14;
+      --panel:#0f1520;
+      --text:#eaf2ff;
+      --muted:#9fb0c3;
+      --neon:#37ff8b;
+      --neon2:#4cc9f0;
+      --accent:#00ffa6;
+      --ring: 0 0 24px rgba(55,255,139,.35), 0 0 48px rgba(76,201,240,.15);
+      --radius:22px;
+    }
+    *{box-sizing:border-box}
+    html,body{
+      margin:0;height:100%;
+      background:
+        radial-gradient(1200px 1200px at 10% -10%, #112, transparent),
+        radial-gradient(900px 900px at 110% 10%, #051a1f, transparent),
+        var(--bg);
+      color:var(--text);
+      font-family:Space Grotesk,system-ui,Segoe UI,Roboto,Arial,sans-serif
+    }
+    a{color:inherit;text-decoration:none}
+    .wrap{max-width:1150px;margin:0 auto;padding:28px 18px}
+    .nav{
+      position:sticky;top:0;z-index:10;
+      background:linear-gradient(180deg, rgba(11,15,20,.9), rgba(11,15,20,.6) 60%, transparent);
+      backdrop-filter: blur(6px);
+      border-bottom:1px solid rgba(255,255,255,.06)
+    }
+    .row{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+    .brand{display:flex;align-items:center;gap:10px;font-weight:700;letter-spacing:.3px;font-size:18px}
+    .badge{width:12px;height:12px;border-radius:999px;background:conic-gradient(from 120deg, var(--neon), var(--neon2));box-shadow:0 0 18px rgba(55,255,139,.8)}
+    .links a{opacity:.8;padding:8px 10px;border-radius:10px;transition:.2s}
+    .links a:hover{opacity:1;background:rgba(255,255,255,.04)}
+    .hero{padding:100px 0 60px}
+    .grid{display:grid;grid-template-columns:1.3fr 1fr;gap:36px;align-items:center}
+    .card{
+      background:linear-gradient(180deg, rgba(255,255,255,.02), rgba(255,255,255,.01));
+      border:1px solid rgba(255,255,255,.08);
+      border-radius:var(--radius);
+      padding:36px;
+      box-shadow: var(--ring);
+      position:relative;
+      overflow:hidden;
+    }
+    .glow:before{
+      content:"";position:absolute;inset:-40%;
+      background:
+        radial-gradient(400px 140px at 20% 0%, rgba(55,255,139,.1), transparent 60%),
+        radial-gradient(400px 140px at 80% 20%, rgba(76,201,240,.08), transparent 60%);
+      filter: blur(10px);pointer-events:none
+    }
+    .pill{
+      display:inline-flex;gap:10px;align-items:center;
+      padding:8px 14px;border-radius:999px;
+      background:rgba(55,255,139,.09);
+      border:1px solid rgba(55,255,139,.35);
+      font-family:"Fira Code",monospace;
+      font-size:13px
+    }
+    h1{font-size:clamp(32px,5vw,54px);line-height:1.1;margin:20px 0 12px}
+    .type{color:var(--neon);text-shadow:0 0 18px rgba(55,255,139,.5)}
+    p.lead{color:var(--muted);font-size:clamp(16px,2vw,19px);margin:10px 0 28px;line-height:1.6}
+    .cta{display:flex;flex-wrap:wrap;gap:14px}
+    .btn{
+      padding:12px 18px;border-radius:14px;
+      border:1px solid rgba(255,255,255,.12);
+      background:#0d131c;cursor:pointer;
+      font-weight:600;transition:.25s;
+    }
+    .btn:hover{transform:translateY(-2px);box-shadow:0 10px 30px rgba(0,0,0,.35), inset 0 0 30px rgba(55,255,139,.08)}
+    .btn.primary{border-color:rgba(55,255,139,.6);background:linear-gradient(90deg, rgba(55,255,139,.18), rgba(76,201,240,.16))}
+    .section-header{
+      font-size:28px;
+      margin:60px 0 20px;
+      color:var(--neon2);
+      text-align:center;
+      text-shadow:0 0 12px rgba(76,201,240,.3);
+    }
+    pre{
+      margin:0;background:#0a0f16;
+      border:1px solid rgba(255,255,255,.08);
+      border-radius:16px;padding:18px;
+      font-family:"Fira Code",monospace;
+      font-size:14px;color:#eaf2ff;
+      overflow:auto;max-height:360px
+    }
+    .tray{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px;margin-top:20px}
+    .tile{
+      background:linear-gradient(180deg, rgba(255,255,255,.02), rgba(255,255,255,.01));
+      border:1px solid rgba(255,255,255,.08);
+      border-radius:18px;padding:22px;
+      transition:.25s;
+    }
+    .tile:hover{transform:translateY(-4px);border-color:rgba(55,255,139,.5)}
+    .tile h3{margin:6px 0 10px;font-size:20px}
+    .tile p{margin:0;color:var(--muted);font-size:15px;line-height:1.5}
+    footer{margin:60px 0 30px;color:#9fb0c3;font-size:14px;text-align:center}
+    footer a{color:var(--neon)}
+    @media (max-width: 900px){
+      .grid{grid-template-columns:1fr}
+    }
+  </style>
 </head>
 <body>
+  <!-- Navbar -->
+  <header class="nav">
+    <div class="wrap row">
+      <div class="brand"><span class="badge"></span> Mirah Hoops</div>
+      <nav class="links">
+        <a href="#services">Services</a>
+        <a href="#products">Products</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-<header class="nav">
-  <div class="wrap row">
-    <div class="brand"><span class="badge"></span> Mirah Hoops</div>
-    <nav class="links">
-      <a href="#services">Services</a>
-      <a href="#projects">Products</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </div>
-</header>
+  <!-- Hero -->
+  <main class="wrap hero">
+    <div class="grid">
+      <section class="card glow">
+        <span class="pill">🧶 Knitting • Crocheting • Fashion Accessories</span>
+        <h1>Welcome to <span class="type" id="type"></span></h1>
+        <p class="lead">
+          Handmade knitting & crocheting wears including earrings, caps, dresses, headbands, scrunchies, and baby sets.
+        </p>
+        <div class="cta">
+          <a class="btn primary" href="mailto:amiratpelumi403@gmail.com">📩 Email</a>
+          <a class="btn" href="tel:+2348089240391">📞 Call</a>
+          <a class="btn" href="https://wa.me/2348089240391" target="_blank">💬 WhatsApp</a>
+        </div>
+      </section>
 
-<main class="wrap hero">
-  <div class="grid">
-    <section class="card">
-      <span class="pill">🧶 Knitting • Crocheting • Fashion Accessories</span>
-      <h1>Welcome to <span class="type" id="type"></span></h1>
-      <p class="lead">
-        Handmade knitting & crocheting wears including earrings, caps, dresses, headbands, scrunchies, and baby sets.
-      </p>
-      <div class="cta">
-        <a class="btn primary" href="mailto:amiratpelumi403@gmail.com">📩 Email</a>
-        <a class="btn" href="tel:+2348089240391">📞 Call</a>
-        <a class="btn" href="https://wa.me/2348089240391">💬 WhatsApp</a>
-      </div>
+      <aside class="card">
+        <pre aria-label="business info"><code>
+<span class="tag">&lt;mirah</span> <span class="attr">business</span>=<span class="str">"Mirah Hoops"</span><span class="tag">&gt;</span>
+  <span class="tag">&lt;services&gt;</span>Knitting, Crocheting, Earrings, Caps, Dresses, Headbands, Scrunchies, Baby Sets<span class="tag">&lt;/services&gt;</span>
+  <span class="tag">&lt;contact&gt;</span>amiratpelumi403@gmail.com | 08089240391 | 07045197465<span class="tag">&lt;/contact&gt;</span>
+<span class="tag">&lt;/mirah&gt;</span>
+        </code></pre>
+      </aside>
+    </div>
+
+    <!-- Services -->
+    <h2 id="services" class="section-header">⚡ Services</h2>
+    <section class="tray">
+      <div class="tile"><h3>🧶 Knitting & Crocheting</h3><p>Handmade wears crafted with love.</p></div>
+      <div class="tile"><h3>🧢 Caps</h3><p>Beanies, ruffle hats & custom styles.</p></div>
+      <div class="tile"><h3>👗 Dresses</h3><p>Unique crochet dresses.</p></div>
+      <div class="tile"><h3>🎀 Accessories</h3><p>Earrings, headbands, scrunchies.</p></div>
+      <div class="tile"><h3>👶 Baby Sets</h3><p>Soft handmade baby outfits.</p></div>
     </section>
-    <aside class="card">
-      <pre>
-<mirah business="Mirah Hoops">
-  <services>Knitting, Crocheting, Earrings, Beanies, Ruffle Hats, Dresses, Headbands, Scrunchies, Baby sets</services>
-  <contact>amiratpelumi403@gmail.com | 08089240391 | 07045197465</contact>
-</mirah>
-      </pre>
-    </aside>
-  </div>
 
-  <h2 id="services" class="section-header">⚡ Services</h2>
-  <section class="tray">
-    <div class="tile"><h3>🧶 Knitting & Crocheting</h3><p>Handmade wears crafted with love.</p></div>
-    <div class="tile"><h3>🧢 Caps</h3><p>Beanies, ruffle hats & custom styles.</p></div>
-    <div class="tile"><h3>👗 Dresses</h3><p>Unique crochet dresses.</p></div>
-    <div class="tile"><h3>🎀 Accessories</h3><p>Earrings, headbands, scrunchies.</p></div>
-    <div class="tile"><h3>👶 Baby Sets</h3><p>Soft handmade baby outfits.</p></div>
-  </section>
+    <!-- Products -->
+    <h2 id="products" class="section-header">🚀 Products</h2>
+    <section class="tray">
+      <div class="tile"><h3>Beanie Collection</h3><p>Stylish handmade caps.</p></div>
+      <div class="tile"><h3>Baby Sets</h3><p>Comfortable crochet outfits.</p></div>
+    </section>
 
-  <h2 id="projects" class="section-header">🚀 Products</h2>
-  <section class="tray">
-    <div class="tile"><h3>Beanie Collection</h3><p>Stylish handmade caps.</p></div>
-    <div class="tile"><h3>Baby Sets</h3><p>Comfortable crochet outfits.</p></div>
-  </section>
+    <!-- Contact -->
+    <h2 id="contact" class="section-header">📬 Contact</h2>
+    <section class="tray">
+      <div class="tile"><h3>📧 Email</h3><p><a href="mailto:amiratpelumi403@gmail.com">amiratpelumi403@gmail.com</a></p></div>
+      <div class="tile"><h3>📞 Phone</h3><p><a href="tel:+2348089240391">08089240391 / 07045197465</a></p></div>
+      <div class="tile"><h3>💬 WhatsApp</h3><p><a href="https://wa.me/2348089240391" target="_blank">Chat on WhatsApp</a></p></div>
+    </section>
+  </main>
 
-  <h2 id="contact" class="section-header">📬 Contact</h2>
-  <section class="tray">
-    <div class="tile"><h3>Email</h3><p>amiratpelumi403@gmail.com</p></div>
-    <div class="tile"><h3>Phone</h3><p>08089240391 / 07045197465</p></div>
-    <div class="tile"><h3>WhatsApp</h3><p>08089240391</p></div>
-  </section>
-</main>
+  <!-- Footer -->
+  <footer>
+    © 2026 Mirah Hoops | Designed by Collins
+  </footer>
 
-<footer>
-  © 2025 Mirah Hoops | Designed by Collins
-</footer>
-
-<script>
-const words = ["Mirah Hoops","Handmade Crochet Brand","Knitting Experts"];
-const el = document.getElementById("type");
-let i=0,j=0,del=false;
-function tick(){
-  const w=words[i%words.length];
-  j=del?j-1:j+1;
-  el.textContent=w.slice(0,j);
-  if(!del&&j==w.length){del=true;setTimeout(tick,1200);return;}
-  if(del&&j==0){del=false;i++}
-  setTimeout(tick,del?60:90);
-}
-tick();
-</script>
-
+  <script>
+    const words = ["Mirah Hoops","Handmade Crochet Brand","Knitting Experts"];
+    const el = document.getElementById("type");
+    let i=0,j=0,del=false;
+    function tick(){
+      const w = words[i % words.length];
+      j = del ? j-1 : j+1;
+      el.textContent = w.slice(0,j);
+      if(!del && j === w.length){ del=true; setTimeout(tick,1200); return; }
+      if(del && j===0){ del=false; i++; }
+      setTimeout(tick, del?60:90);
+    }
+    tick();
+  </script>
 </body>
 </html>
